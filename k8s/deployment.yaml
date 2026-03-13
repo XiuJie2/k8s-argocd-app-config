@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ntub
+spec:
+  selector:
+    matchLabels:
+      app: ntub
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: ntub
+    spec:
+      containers:
+      - name: ntub
+        image: lixiujie85/ntub-site:1.0
+        ports:
+        - containerPort: 8080
