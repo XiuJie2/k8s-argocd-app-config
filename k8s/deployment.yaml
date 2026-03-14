@@ -16,4 +16,4 @@ spec:
       - name: ntub
         image: lixiujie85/ntub-site:1.0
         ports:
-        - containerPort: 8080
+        - containerPort: 80
